@@ -1,15 +1,15 @@
-defmodule Homotron9K.Application do
+defmodule Robotron9K.Application do
   use Application
 
   def start(_type, _args) do
-    children = [Homotron9K.Consumer]
+    children = [Robotron9K.Consumer]
 
-    Supervisor.start_link(children, [strategy: :rest_for_one, name: Homotron9K.Supervisor])
+    Supervisor.start_link(children, [strategy: :rest_for_one, name: Robotron9K.Supervisor])
   end
 end
 
 
-defmodule Homotron9K.Consumer do
+defmodule Robotron9K.Consumer do
   use Nostrum.Consumer
 
   alias Nostrum.Api

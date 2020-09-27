@@ -1,4 +1,4 @@
-defmodule Homotron9K.MixProject do
+defmodule Robotron9K.MixProject do
   use Mix.Project
 
   def project do
@@ -14,7 +14,7 @@ defmodule Homotron9K.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      mod: {Homotron9K.Application, []},
+      mod: {Robotron9K.Application, []},
       extra_applications: [:logger]
     ]
   end
